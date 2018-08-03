@@ -57,8 +57,8 @@ async function handleEvent(event) {
   }
   return client.replyMessage(event.replyToken, {
     type: 'video',
-    originalContentUrl: 'https://556be390.ngrok.io/' + fileName,
-    previewImageUrl: 'https://556be390.ngrok.io/' + fileName + '.png'
+    originalContentUrl: config.staticServer + fileName,
+    previewImageUrl: config.staticServer + fileName + '.png'
   });
 }
 
