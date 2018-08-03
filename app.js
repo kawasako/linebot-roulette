@@ -1,9 +1,11 @@
+const fs = require('fs-extra');
+
 const express = require('express');
 const line = require('@line/bot-sdk');
 const config = require('./line');
 
 const path = require('path');
-const gifGenerator = require('./gifGenerator');
+// const gifGenerator = require('./gifGenerator');
 const mp3Generator = require('./mp3Generator');
 
 const app = express();
@@ -59,5 +61,9 @@ async function handleEvent(event) {
     previewImageUrl: 'https://556be390.ngrok.io/' + fileName + '.png'
   });
 }
+
+// cleaner
+fs.emptyDirSync('./tmp');
+fs.writeFileSync('./tmp/.keep');
 
 app.listen(3000);

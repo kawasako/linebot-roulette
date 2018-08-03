@@ -3,7 +3,7 @@ module.exports = {
     name: 'BOT',
     script: 'app.js',
     watch : true,
-    ignore_watch: ['public', 'tmp', '**.DS_Store'],
+    ignore_watch: ['public', 'tmp', '*/.DS_Store', '*/.keep'],
     env: {
       NODE_ENV: 'development'
     },

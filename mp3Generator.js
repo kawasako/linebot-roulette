@@ -1,5 +1,5 @@
 const path = require('path');
-const fs = require('fs');
+const fs = require('fs-extra');
 const GIFEncoder = require('gifencoder');
 const ffmpeg = require('fluent-ffmpeg');
 const Canvas = require('canvas');
