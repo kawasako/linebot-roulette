@@ -1,0 +1,20 @@
+{
+  "name": "linebot-roulette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kawasako",
+  "license": "MIT",
+  "dependencies": {
+    "@line/bot-sdk": "^6.1.0",
+    "canvas": "^1.6.11",
+    "easingjs": "^1.0.1",
+    "express": "^4.16.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "gifencoder": "^1.1.0"
+  }
+}

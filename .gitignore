@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+line.json
+tmp/*.png
+public/*.mp4
+public/*.mp4.png
